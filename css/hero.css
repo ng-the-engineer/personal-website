@@ -1,0 +1,36 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/fabrizio-chiagano-YhnODmrg8hY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* padding: 0 30%; */
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.hero-title {
+  font-size: 300%;
+  font-weight: 600;
+}
+.hero-version {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+.credit {
+  position: absolute;
+  left: 2%;
+  top: 97%;
+  color: #9e9e9e;
+  font-size: 10%;
+}

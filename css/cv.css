@@ -1,0 +1,38 @@
+.hero-btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  /* padding: 0 30%; */
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #fa8231;
+  border: 1px solid #fa8231;
+  color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #f26506;
+  border: 1px solid #f26506;
+}
+
+.btn-ghost {
+  border: 1px solid #fa8231;
+}

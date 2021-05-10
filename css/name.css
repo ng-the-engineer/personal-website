@@ -1,0 +1,13 @@
+.nav-bar {
+  float: left;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin-left: 100px;
+  color: #fff;
+  font-size: 200%;
+  font-family: "Pattaya";
+}
