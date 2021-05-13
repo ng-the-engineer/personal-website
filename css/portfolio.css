@@ -46,6 +46,7 @@ h1 {
 /* Content */
 .content {
   background-color: white;
+  /* background: rgba(6, 19, 77, 0.8); */
   padding: 10px;
   height: 375px;
 }
@@ -73,4 +74,8 @@ h1 {
 .filter-btn.active {
   background-color: #f26506;
   color: white;
+}
+
+.photo {
+  width: 100%;
 }

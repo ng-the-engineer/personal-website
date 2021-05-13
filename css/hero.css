@@ -34,3 +34,17 @@
   color: #9e9e9e;
   font-size: 10%;
 }
+
+.scroll-down {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  letter-spacing: 5px;
+  transform: translate(-50%, -50%);
+}
+
+.down-arrow {
+  color: #fff;
+  font-size: 200%;
+  padding: 20px 5px;
+}

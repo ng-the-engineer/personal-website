@@ -15,6 +15,10 @@
     href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
     rel="stylesheet"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
 
   <body>
     <header class="hero">
@@ -23,6 +27,11 @@
       </div>
       <div class="hero-btn">
         <a href="https://cv.anthony.ng" class="btn btn-full">CV</a>
+      </div>
+      <div class="scroll-down">
+        <a class="down-arrow" href="#section2"
+          ><i class="fa fa-angle-down"></i
+        ></a>
       </div>
       <div class="credit">Photo by Fabrizio Chiagano on Unsplash</div>
 
@@ -33,7 +42,7 @@
       </nav>
     </header>
 
-    <div class="center-content">
+    <div id="section2" class="center-content">
       <h2>Portfolio</h2>
       <div id="myBtnContainer">
         <button class="filter-btn active" onclick="filterSelection('all')">
@@ -52,11 +61,7 @@
       <div class="row">
         <div class="column mobile web">
           <div class="content">
-            <img
-              src="./images/covidclean.png"
-              alt="Mountains"
-              style="width: 100%"
-            />
+            <img src="./images/covidclean.png" alt="Mountains" class="photo" />
             <h4>Covid-19 tracker</h4>
             <p>
               CovidClean helped travelers to make a better option by accessing
