@@ -1,0 +1,50 @@
+.service-bg {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/service.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.service-text {
+  color: white;
+}
+
+.service-vh-center {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+}
+
+.service-column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.service-row {
+  margin: 0 -5px;
+}
+
+.service-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.service-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  color: white;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.service-icon {
+  color: #fff;
+  font-size: 200%;
+}

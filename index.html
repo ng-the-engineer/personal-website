@@ -8,13 +8,25 @@
   <link rel="stylesheet" href="./css/hero.css" />
   <link rel="stylesheet" href="./css/name.css" />
   <link rel="stylesheet" href="./css/cv.css" />
+  <link rel="stylesheet" href="./css/aboutme.css" />
   <link rel="stylesheet" href="./css/portfolio.css" />
+  <link rel="stylesheet" href="./css/service.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
 
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
     rel="stylesheet"
   />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Molengo&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
+    rel="stylesheet"
+  />
+
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -29,7 +41,7 @@
         <a href="https://cv.anthony.ng" class="btn btn-full">CV</a>
       </div>
       <div class="scroll-down">
-        <a class="down-arrow" href="#section2"
+        <a class="down-arrow" href="#about-me"
           ><i class="fa fa-angle-down"></i
         ></a>
       </div>
@@ -42,8 +54,19 @@
       </nav>
     </header>
 
+    <div id="about-me" class="aboutMe-container">
+      <div class="v-center h-center">
+        <h2 class="center">About Me</h2>
+
+        <div class="myself-text">
+          " An experienced software engineer who cares about quality, team, and
+          society."
+        </div>
+      </div>
+    </div>
+
     <div id="section2" class="center-content">
-      <h2>Portfolio</h2>
+      <h2 class="center">Portfolio</h2>
       <div id="myBtnContainer">
         <button class="filter-btn active" onclick="filterSelection('all')">
           Show all
@@ -171,6 +194,42 @@
         <!-- END GRID -->
       </div>
     </div>
+
+    <div class="service-bg">
+      <div class="service-vh-center">
+        <h2 class="center service-text">Services</h2>
+        <div class="service-row">
+          <div class="service-column">
+            <div class="service-card">
+              <a class="service-icon"><i class="fa fa-code"></i></a>
+              <div>Software Development</div>
+            </div>
+          </div>
+          <div class="service-column">
+            <div class="service-card">
+              <a class="service-icon"><i class="fa fa-cloud"></i></a>
+              <div>DevOps</div>
+            </div>
+          </div>
+          <div class="service-column">
+            <div class="service-card">
+              <a class="service-icon"><i class="fa fa-university"></i></a>
+              <div>System Architecture</div>
+            </div>
+          </div>
+          <div class="service-column">
+            <div class="service-card">
+              <a class="service-icon"><i class="fa fa-superscript"></i></a>
+              <div>Machine Intelligence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="credit">Photo by Gilles Lambert on Unsplash</div>
+    </div>
+
+    <div class="footer"></div>
+
     <script src="js/typewritter.js"></script>
     <script src="js/filter.js"></script>
     <script>
