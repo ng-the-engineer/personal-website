@@ -29,6 +29,15 @@ h1 {
   padding: 8px;
 }
 
+.row-blog {
+  margin: 8px -16px;
+}
+
+.row-blog,
+.row-blog > .column-blog {
+  padding: 8px;
+}
+
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
@@ -36,8 +45,20 @@ h1 {
   display: none; /* Hide columns by default */
 }
 
+.column-blog {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
 /* Clear floats after rows */
 .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-blog:after {
   content: "";
   display: table;
   clear: both;
@@ -49,6 +70,9 @@ h1 {
   /* background: rgba(6, 19, 77, 0.8); */
   padding: 10px;
   height: 375px;
+}
+.content:hover .image {
+  opacity: 0.7;
 }
 
 /* The "show" class is added to the filtered elements */

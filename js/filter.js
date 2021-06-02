@@ -1,4 +1,5 @@
 function filterSelection(c) {
+  console.log('filterSelection is clicked')
   var x, j;
   x = document.getElementsByClassName("column");
   if (c == "all") c = "";
@@ -8,6 +9,18 @@ function filterSelection(c) {
     if (x[j].className.indexOf(c) > -1) w3AddClass(x[j], "show");
   }
 }
+
+const filterBlogs = (c) => {
+  console.log('filterBlogs is clicked')
+  var x, j;
+  x = document.getElementsByClassName("column-blog");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (j = 0; j < x.length; j++) {
+    w3RemoveClass(x[j], "show");
+    if (x[j].className.indexOf(c) > -1) w3AddClass(x[j], "show");
+  }
+} 
 
 // Show filtered elements
 function w3AddClass(element, name) {
@@ -34,16 +47,25 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
+const showCategory = (btns) => {
+  for (var j = 0; j < btns.length; j++) {
+
+    console.log('add event')
+    btns[j].addEventListener("click", function(){
+      console.log(' button clicked')
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+}
+
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("filter-btn");
-for (var j = 0; j < btns.length; j++) {
+showCategory(btns);
 
-  console.log('add event')
-  btns[j].addEventListener("click", function(){
-    console.log(' button clicked')
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+
+const blogContainer = document.getElementById("blog-container");
+const blogCategories = blogContainer.getElementsByClassName("filter-blog-category");
+showCategory(blogCategories);
