@@ -54,7 +54,7 @@
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 0.1s ease;
   background-color: #fed330;
 }
 
