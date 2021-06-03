@@ -1,4 +1,4 @@
-.blog-image {
+.post-thumbnail {
   display: block;
   width: 100%;
   height: auto;
@@ -91,12 +91,6 @@
   text-decoration: none;
 }
 
-.post-thumbnail {
-  position: relative;
-  display: inline-block;
-  width: auto;
-}
-
 a:-webkit-any-link {
   color: white;
   text-decoration: none;
@@ -109,4 +103,32 @@ a:-webkit-any-link {
   background-color: #bdc581;
   border-radius: 10px;
   padding: 2px 7px;
+}
+
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .post-container {
+    height: 475px;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  .post-container {
+    height: 500px;
+  }
+}
+
+/* Small phones to small tables: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  .post-container {
+    height: 650px;
+  }
+}
+
+/* Small phones: from 0 to 480px  */
+@media only screen and (max-width: 480px) {
+  .post-container {
+    height: 500px;
+  }
 }

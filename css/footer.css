@@ -27,7 +27,6 @@
 .horizontal-list {
   float: left;
   list-style: none;
-  /* vertical-align: middle; */
 }
 
 .horizontal-list li {
@@ -42,4 +41,21 @@
 
 .vectical-center {
   line-height: 35px;
+}
+
+/* Small phones to small tables: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  .horizontal-list li {
+    margin: 3px;
+  }
+}
+
+/* Small phones: from 0 to 480px  */
+@media only screen and (max-width: 480px) {
+  .horizontal-list li {
+    margin: 1px;
+  }
+  .footer {
+    height: 300px;
+  }
 }
