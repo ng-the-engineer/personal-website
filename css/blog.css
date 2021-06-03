@@ -84,6 +84,7 @@
   color: white;
   background-color: #fa8231;
   text-decoration: none;
+  font-size: 20px;
 }
 
 a:-webkit-any-link {
@@ -98,6 +99,25 @@ a:-webkit-any-link {
   background-color: #bdc581;
   border-radius: 10px;
   padding: 2px 7px;
+}
+
+/* Only for mobile and tablet where mouse over is not efficient */
+.button-read-more {
+  display: none;
+  padding: 3px 7px;
+  border-radius: 15px;
+  background-color: #fed330;
+  font-size: 10px;
+}
+
+.button-read-more:visited,
+.button-read-more:link {
+  background-color: #fed330;
+}
+
+.button-read-more:hover,
+.button-read-more:active {
+  background-color: #fa8231;
 }
 
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
@@ -119,11 +139,29 @@ a:-webkit-any-link {
   .post-container {
     height: 650px;
   }
+
+  /* Only for mobile and tablet where mouse over is not efficient */
+  .button-read-more {
+    display: inline-block;
+  }
+
+  .post-overlay {
+    display: none;
+  }
 }
 
 /* Small phones: from 0 to 480px  */
 @media only screen and (max-width: 480px) {
   .post-container {
     height: 500px;
+  }
+
+  /* Only for mobile and tablet where mouse over is not efficient */
+  .button-read-more {
+    display: inline-block;
+  }
+
+  .post-overlay {
+    display: none;
   }
 }
