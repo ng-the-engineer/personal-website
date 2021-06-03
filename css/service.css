@@ -22,7 +22,8 @@
 .service-column {
   float: left;
   width: 25%;
-  padding: 0 10px;
+  height: 200px;
+  padding: 10px 10px;
 }
 
 .service-row {
@@ -47,4 +48,54 @@
 .service-icon {
   color: #fff;
   font-size: 200%;
+}
+
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .service-column {
+    width: 33.33%;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  .service-column {
+    width: 50%;
+  }
+}
+
+/* Small phones to small tables: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  .service-bg {
+    height: 700px;
+  }
+
+  .service-vh-center {
+    position: absolute;
+    top: 5%;
+  }
+
+  .service-column {
+    width: 100%;
+    padding: 2px 2px;
+    height: 130px;
+  }
+}
+
+/* Small phones: from 0 to 480px  */
+@media only screen and (max-width: 480px) {
+  .service-bg {
+    height: 700px;
+  }
+
+  .service-vh-center {
+    position: absolute;
+    top: 5%;
+  }
+
+  .service-column {
+    width: 100%;
+    padding: 2px 2px;
+    height: 130px;
+  }
 }
