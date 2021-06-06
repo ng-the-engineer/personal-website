@@ -43,10 +43,86 @@ h1 {
 .content {
   background-color: white;
   padding: 10px;
-  height: 375px;
+  height: 390px;
 }
 .content:hover .image {
   opacity: 0.7;
+}
+
+.portfolio-container {
+  position: relative;
+  background-color: white;
+  padding: 10px;
+  height: 390px;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.1s ease;
+  background-color: #fed330;
+}
+
+.portfolio-container:hover .portfolio-overlay {
+  opacity: 0.8;
+}
+
+.portfolio-thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-link {
+  /* display: inline-block; */
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 3px 7px;
+  border-radius: 15px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+
+.portfolio-link:visited,
+.portfolio-link:link {
+  background-color: black;
+  text-decoration: none;
+}
+.portfolio-link:hover,
+.portfolio-link:active {
+  color: white;
+  background-color: #fa8231;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.portfolio-ios {
+  left: 35%;
+}
+
+.portfolio-android {
+  left: 60%;
+}
+
+.tag-year {
+  font-size: 10px;
+  color: white;
+  background-color: #bdc581;
+  border-radius: 10px;
+  padding: 2px 7px;
 }
 
 /* Big tablet to 1200px (widths smaller than the 1140px row) */
@@ -62,6 +138,10 @@ h1 {
 
   .column-blog {
     width: 50%;
+  }
+
+  .portfolio-container {
+    height: 470px;
   }
 }
 
