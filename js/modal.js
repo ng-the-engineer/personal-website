@@ -13,6 +13,11 @@ document.getElementById("allPrjTravie").onclick = () => modalTravie.style.displa
 // document.getElementById("travie_hist").onclick = () => modalTravie.style.display = "block";
 document.getElementById("closeModalTravie").onclick = () => modalTravie.style.display = "none";
 
+// DMX
+const modalDmx = document.getElementById("modalDmx");
+document.getElementById("allPrjDmx").onclick = () => modalDmx.style.display = "block";
+document.getElementById("closeModalDmx").onclick = () => modalDmx.style.display = "none";
+
 window.onclick = (event) => {
     switch(event.target) {
       case modalAutobid:
@@ -21,5 +26,7 @@ window.onclick = (event) => {
         modalTravie.style.display = "none";
       case modalSainsburysBank:
         modalSainsburysBank.style.display = "none";
+      case modalDmx:
+        modalDmx.style.display = "none";
     }
   };
