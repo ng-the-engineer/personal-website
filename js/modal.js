@@ -1,3 +1,7 @@
+// Sainsburys Banks
+document.getElementById("allPrjSainsburysBank").onclick = () => modalSainsburysBank.style.display = "block";
+document.getElementById("closeModalSainsburysBank").onclick = () => modalSainsburyBank.style.display = "none";
+
 // AutoBid
 const modalAutobid = document.getElementById("modalAutobid");
 document.getElementById("allPrjAutobid").onclick = () => modalAutobid.style.display = "block";
@@ -15,5 +19,7 @@ window.onclick = (event) => {
         modalAutobid.style.display = "none";
       case modalTravie:
         modalTravie.style.display = "none";
+      case modalSainsburysBank:
+        modalSainsburysBank.style.display = "none";
     }
   };
