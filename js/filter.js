@@ -1,5 +1,4 @@
 function filterSelection(c) {
-  console.log('filterSelection is clicked')
   var x, j;
   x = document.getElementsByClassName("column");
   if (c == "all") c = "";
@@ -11,7 +10,6 @@ function filterSelection(c) {
 }
 
 const filterBlogs = (c) => {
-  console.log('filterBlogs is clicked')
   var x, j;
   x = document.getElementsByClassName("column-blog");
   if (c == "all") c = "";
@@ -49,10 +47,7 @@ function w3RemoveClass(element, name) {
 
 const showCategory = (btns) => {
   for (var j = 0; j < btns.length; j++) {
-
-    console.log('add event')
     btns[j].addEventListener("click", function(){
-      console.log(' button clicked')
       var current = document.getElementsByClassName("active");
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";

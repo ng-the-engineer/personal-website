@@ -1,6 +1,7 @@
 // Sainsburys Banks
+const modalSainsburysBank = document.getElementById("modalSainsburysBank");
 document.getElementById("allPrjSainsburysBank").onclick = () => modalSainsburysBank.style.display = "block";
-document.getElementById("closeModalSainsburysBank").onclick = () => modalSainsburyBank.style.display = "none";
+document.getElementById("closeModalSainsburysBank").onclick = () => modalSainsburysBank.style.display = "none";
 
 // AutoBid
 const modalAutobid = document.getElementById("modalAutobid");
@@ -10,7 +11,6 @@ document.getElementById("closeModalAutobid").onclick = () => modalAutobid.style.
 // Travie
 const modalTravie = document.getElementById("modalTravie");
 document.getElementById("allPrjTravie").onclick = () => modalTravie.style.display = "block";
-// document.getElementById("travie_hist").onclick = () => modalTravie.style.display = "block";
 document.getElementById("closeModalTravie").onclick = () => modalTravie.style.display = "none";
 
 // DMX
