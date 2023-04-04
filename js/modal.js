@@ -1,3 +1,8 @@
+// Nationwide
+const modalNationwide = document.getElementById("modalNationwide");
+document.getElementById("allPrjNationwide").onclick = () => modalNationwide.style.display = "block";
+document.getElementById("closeModalNationwide").onclick = () => modalNationwide.style.display = "none";
+
 // Sainsburys Banks
 const modalSainsburysBank = document.getElementById("modalSainsburysBank");
 document.getElementById("allPrjSainsburysBank").onclick = () => modalSainsburysBank.style.display = "block";
@@ -28,5 +33,7 @@ window.onclick = (event) => {
         modalSainsburysBank.style.display = "none";
       case modalDmx:
         modalDmx.style.display = "none";
+      case modalNationwide:
+        modalNationwide.style.display = "none";
     }
   };
