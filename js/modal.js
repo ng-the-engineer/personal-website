@@ -8,6 +8,11 @@ const modalSainsburysBank = document.getElementById("modalSainsburysBank");
 document.getElementById("allPrjSainsburysBank").onclick = () => modalSainsburysBank.style.display = "block";
 document.getElementById("closeModalSainsburysBank").onclick = () => modalSainsburysBank.style.display = "none";
 
+// SC
+const modalSC = document.getElementById("modalSC");
+document.getElementById("allPrjSC").onclick = () => modalSC.style.display = "block";
+document.getElementById("closeModalSC").onclick = () => modalSC.style.display = "none";
+
 // AutoBid
 const modalAutobid = document.getElementById("modalAutobid");
 document.getElementById("allPrjAutobid").onclick = () => modalAutobid.style.display = "block";
@@ -31,6 +36,8 @@ window.onclick = (event) => {
         modalTravie.style.display = "none";
       case modalSainsburysBank:
         modalSainsburysBank.style.display = "none";
+      case modalSC:
+        modalSC.style.display = "none";
       case modalDmx:
         modalDmx.style.display = "none";
       case modalNationwide:
