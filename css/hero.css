@@ -19,7 +19,6 @@
 }
 
 .hero-title {
-  font-size: 300%;
   font-weight: 600;
   text-align: center;
 }
@@ -55,5 +54,27 @@
 @media only screen and (max-width: 480px) {
   .hero-title {
     font-size: 200%;
+  }
+}
+
+h1 {
+  span.text {
+    padding: 0;
+    padding-right: 4px;
+    border-right: 2px solid #747474;
+    animation: blink 0.75s infinite;
+  }
+
+  .blue {
+    color: #4480ff;
+  }
+  .green {
+    color: #4caf50;
+  }
+  .yellow {
+    color: #f4b400;
+  }
+  .red {
+    color: #f44336;
   }
 }
